@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Usługi fryzjerskie</title>
+    <link rel="stylesheet" href="styl2.css"> 
+</head>
+<body>
+    <div id="glowny"></div>
+        <main>
+            <div id="l1">
+                <h2><a href="index.html">SLAON FRYZJERSKI</a></h2>
+                <img src="obraz2.jpg" alt="Czesanie">
+            </div>
+            <div id="l2">
+                <h3>Dziś promocja na strzyżenie włosów</h3>
+                <form>
+                    <input type="radio" name="dl" id="k" value="krótkie">
+                    <label for="k">Krótkie</label><br>
+                    <input type="radio" name="dl" id="s" value="średnie">
+                    <label for="s">Średnie</label><br>
+                    <input type="radio" name="dl" id="p" value="półdługie">
+                    <label for="p">Półdługie</label><br>
+                    <input type="radio" name="dl" id="d" value="długie">
+                    <label for="d">Długie</label><br>
+                    <button id="odkryj" onclick="pokazCene()">Odkryj promocje</button><br>
+                </form>
+                <p id="wynik"></p>
+            </div>
+        </main>
+        <aside>
+            <div id="p1">
+                <h2>MENU</h2>
+            </div>
+            <div id="p2">
+                <ol>
+                    <li><a href="fryzura.html">Strzyżenie</a>
+                        <ul>
+                            <li>krótkie</li>
+                            <li>średnie</li>
+                            <li>półdługie</li>
+                            <li>długie</li>
+                        </ul>
+                    </li>
+                    <li>Czesanie</li>
+                    <li>Koloryzacja</li>
+                </ol>
+            </div>
+            <div id="p3">
+                <img src="obraz1.jpg" alt="Fryzjer">
+            </div>
+        </aside>
+    </div>
+    <footer>
+        Autor: 00000000
+    </footer>
+    <script>
+        let cena = 0;
+        function pokazCene(){
+            if(document.querySelector("#k").checked){
+                cena = 25;
+            }
+            if(document.querySelector("#s").checked){
+                cena = 30;
+            }
+            if(document.querySelector("#p").checked){
+                cena = 40;
+            }
+            if(document.querySelector("#d").checked){
+                cena = 50;
+            }
+            document.querySelector("#wynik").innerText = `Cena strzyżenia: ${cena}`;
+            /*Po odpaleniu w przeglądarce na sekunde wyskakuje wynik w p a potem znika. Siedziałem nad tym pół godziny ale nawet na stacku nie znalazłem powodu. W pliku z lekcji działalo
+            ale nie zuploadowałem na github więc pisałem od początku*/
+        }
+    </script>
+</body>
+</html>

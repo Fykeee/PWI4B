@@ -1,0 +1,27 @@
+h1 {
+    text-align: center;
+}
+p {
+    text-align: center;
+}
+body{
+    color: white;
+    background-color: black;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 16%;
+    padding-right: 20%;
+}
+li{
+    background-color: aquamarine;
+    color: white;
+    list-style-type: none;
+}
+footer{
+    color: black;
+    text-align: center;
+    background-color: bisque;
+}

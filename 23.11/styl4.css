@@ -1,0 +1,21 @@
+html, body {
+    font-family: Helvetica;
+    padding: 0;
+    margin: 0;
+}
+header, footer{
+    color: white;
+    background-color: #AF4448;
+    text-align: center;
+    height: 20px;
+}
+h3 {
+    margin: 0;
+}
+h4 {
+    margin: 0;
+}
+main {
+    display: flex;
+    width: 100%;
+}

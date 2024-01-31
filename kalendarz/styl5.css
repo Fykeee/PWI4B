@@ -1,0 +1,47 @@
+* {
+    
+    font-family: Arial;
+    
+}
+header {
+    display: flex;
+    
+}
+#banner2 {
+    background-color: #483D8B;
+    color: white;
+    height: 150px;
+    width: 70%;
+
+}
+
+#banner1 {
+    background-color: #483D8B;
+    height: 150px;
+    width: 30%;
+    
+}
+
+#banner3 {
+    background-color: #AFEEEE;
+    width: 150px;
+    height: 100px;
+    margin: 3px;
+    border: 1px solid;
+    
+}
+
+footer {
+    background-color: #483D8B;
+    color: white;
+    padding: 10px;
+}
+
+h5 {
+    text-align: center;
+}
+
+#glowny {
+    display: flex;
+    flex-wrap: wrap;
+}
